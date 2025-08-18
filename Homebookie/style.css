@@ -1,0 +1,521 @@
+  /*body ,main{
+    overflow-x: hidden; 
+    overflow-Y: hidden; 
+  }*/
+
+  #Banner {
+    background-color: #99cf46;
+    justify-content: space-between;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  #Title {
+    font-family: "Banner";
+    text-decoration: underline;
+  }
+
+  #TextoBanner {
+    padding-top: 35px;
+    padding-right: 1500px;
+    font-family: "Banner";
+    font-size: 0px;
+    font-display: unset;
+    text-decoration: underline #5e8524;
+    margin-top: -115px;
+    padding-left: 120px;
+    overflow-x: auto;
+    padding-right: 100px;
+  }
+
+  /*---------------------| Join |---------------------*/
+
+  #heading {
+    font-family: "Header";
+    font-size: 3rem;
+    color: #964CA2;
+    text-decoration: underline 1;
+    text-align: center;
+
+  }
+
+  #Filler {
+    height: 100%;
+    width: 80%;
+  }
+
+  /*-----------------------| Sobre |---------------------*/
+  #sobrebox {
+    position: fixed;
+    bottom: 0;
+    background-color: #E3D0E9;
+    justify-content: center;
+    padding-top: 5px;
+    z-index: -1;
+  }
+
+  #random-text {
+    margin-top: 10%;
+    text-align: center;
+    margin-left: 5%;
+    font-family: Header;
+    color: #515151;
+    
+  }
+
+  #first {
+    margin-left: 10%;
+  }
+
+  /*-----------------------| Login |---------------------*/
+
+  #entrar {
+    color: #6B8D70;
+    align-self: center;
+    font-family: "Registers";
+  }
+
+  #caixalogin {
+    width: 55%;
+  }
+
+  #leftlogin {
+    width: 50%;
+  }
+
+  #voltar{
+    color: #000;
+  }
+
+  #inputlogin {
+    background-color: #6B8D70;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+
+    color: #f6f6f6;
+  }
+
+  #inputlogin::placeholder {
+    color: #D6D8D7;
+    font-family: "Registers";
+    font-size: 1.1rem;
+    width: 8rem;
+  }
+
+  #loginbox {
+    background-color: #F6F6F6;
+    border-radius: 1rem;
+    border: .2rem solid #99cf46;
+    margin-top: 10%;
+    justify-content: space-between;
+  }
+
+  #botaologin {
+    background-color: #9C8BAC;
+    border: none;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    font-family: "Registers";
+    color: #D6D8D7;
+    font-size: 1.4rem;
+  }
+
+  #fillerlogin {
+    width: 60%;
+  }
+
+  /*-----------------------| Fundos |---------------------*/
+
+  #fundog {
+    background-image: url('imagens/FundoGradient.png');
+  }
+
+  /*-----------------------| Fontes |----------------------*/
+
+  @font-face {
+    font-family: "Registers";
+    src: url('Fontes/Buenard-VariableFont_wght.ttf');
+  }
+
+
+  @font-face {
+    font-family: "Header";
+    src: url('Fontes/InriaSans-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: "Button";
+    src: url('Fontes/JacquesFrancois-Regular.ttf');
+  }
+
+
+  @font-face {
+    font-family: "Banner";
+    src: url('Fontes/BabyKimo.ttf');
+    font-size: 30px;
+  }
+
+  /*----------------------| Botões |---------------------*/
+
+  #ButtonTemplate1 {
+    padding: .3rem;
+    border: .17rem solid white;
+    border-radius: 4rem;
+    font-family: "Button";
+    font-weight: bold;
+    background: #3fd660;
+    color: white;
+    font-size: 1rem;
+  }
+
+  #ButtonTemplate1:hover {
+    background: #34be52;
+  }
+
+  #ButtonTemplate2 {
+    padding: .3rem;
+    border: .17rem solid white;
+    border-radius: 4rem;
+    font-family: "Button";
+    font-weight: bold;
+    background-color: rgb(167, 81, 180);
+    color: white;
+    font-size: 1rem;
+  }
+
+  #ButtonTemplate2:hover {
+    background: #964CA2;
+  }
+
+  /*-------------------------| Sidebar |---------------------------*/
+
+  .sidebar {
+    margin-top: -15px;
+    margin-left: -12px;
+    width: 120px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100vh;
+    overflow: auto;
+    transition: all 0.4s ease;
+    z-index: 2;
+  }
+
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 1px 16px !important;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+
+  .sidebar a img {
+    height: 82px;
+    width: 110px;
+    margin-left: -6px;
+    transition: all 0.3s ease;
+  }
+
+  .sidebar-text {
+    margin-left: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: none;
+    font-size: 1.2rem;
+  }
+
+  /* Efeitos hover */
+  .sidebar:hover {
+    width: 270px;
+  }
+
+  .sidebar:hover .sidebar-text {
+    opacity: 1;
+    display: inline;
+  }
+
+  .sidebar a:not(.active):not(:hover) img {
+    filter: grayscale(100%);
+  }
+
+  .sidebar a:hover {
+    background-color: #ddd;
+  }
+
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  /*--------| responsive fix |--------*/
+
+
+  @media(max-height: 414px) {
+    #Banner {
+      position: fixed;
+      height: -30%;
+    }
+
+    #Filler {
+      height: 100%;
+      width: 50%;
+    }
+
+    #Title {
+      margin-left: 5%;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 992px) {
+    .sidebar a img {
+      height: 70px;
+      width: 90px;
+      margin-left: 0px;
+    }
+
+    /*----------------------------| join |------------------------*/
+
+    #joinmiddle {
+      margin-left: 50%;
+    }
+
+    #Filler {
+      display: none;
+    }
+
+    /*----------------------------| login & cadastro |---------------------*/
+    #fillerlogin {
+      width: 0;
+    }
+
+    #imagefillerlogin {
+      display: none;
+    }
+
+
+    #fillerlogin {
+      width: 0%;
+    }
+
+    #imagefillerlogin {
+      display: none;
+    }
+
+    #caixalogin {
+      width: 90%;
+    }
+
+    #loginbox {
+      /* margin-top:; */
+      justify-content: center;
+      width: 200%;
+    }
+
+    #leftlogin {
+      width: 150%;
+
+    }
+
+
+
+
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80px;
+    }
+
+    .sidebar:hover {
+      width: 220px;
+    }
+
+    .sidebar a img {
+      height: 60px;
+      width: 80px;
+      margin-left: -10px;
+    }
+
+    #joinmiddle {
+      margin-left: 17%;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    #logo {
+      height: 75px;
+    }
+
+    #Title {
+      margin-left: 3%;
+    }
+
+
+    .sidebar {
+      margin-left: 0;
+      bottom: 0;
+      height: auto;
+      top: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 0;
+      width: 100%;
+      padding-top: 0;
+      position: relative;
+      margin-top: 0px;
+      overflow-x: visible;
+    }
+
+    .sidebar:hover {
+      width: 100%;
+    }
+
+    .sidebar-text {
+      display: none !important;
+    }
+
+    .sidebar a {
+      flex-direction: column;
+      padding: 20px 30px !important;
+    }
+
+    .sidebar a img {
+      height: 50px;
+      width: 65px;
+      margin-left: 0;
+      margin-bottom: -15px;
+      margin-top: -15px;
+    }
+
+    #Filler {
+      display: block;
+    }
+
+    #joinmiddle {
+      margin-left: 0%;
+    }
+
+    /*-----------------------| Sobre |---------------------*/
+    #sobrebox {
+      flex-direction: column;
+    }
+
+    #first {
+      margin-left: 0%;
+    }
+
+    #random-text {
+      font-size: 0;
+    }
+
+    /*----------------------| Login && Cadastro |-----------------------*/
+
+    #fillerlogin {
+      width: 0%;
+    }
+
+    #imagefillerlogin {
+      display: none;
+    }
+
+    #caixalogin {
+      width: 100%;
+    }
+
+    #loginbox {
+      margin-top: 40%;
+      justify-content: center;
+      width: 200%;
+    }
+
+    #leftlogin {
+      width: 150%;
+
+    }
+
+    /*----------------------| Fundo |-------------------------*/
+    #fundog {
+      background-size: auto;
+    }
+
+    /*----------------------| Botões |---------------------*/
+
+    #ButtonTemplate1 {
+      border: .1rem solid white;
+      border-radius: 3rem;
+      font-size: .7rem;
+    }
+
+    #ButtonTemplate2 {
+      border: .1rem solid white;
+      border-radius: 3rem;
+      font-size: .7rem;
+    }
+  }
+
+  .sidebar a #textoside {
+    text-decoration: underline;
+    font-weight: normal;
+  }
+
+  .sidebar:not(:hover) a #textoside {
+    opacity: 0%;
+    transition: .3s;
+  }
+
+  .sidebar:hover a #textoside {
+    opacity: 1;
+    transition: .3s;
+    margin-left: 8%;
+  }
+
+  /*-----------------------------*/
+
+  /*  links do Sidebar */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 19px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* Link selecionado */
+  .sidebar a.active {
+    background-color: #7db130;
+    color: white;
+  }
+
+  /* Hover nos Links */
+  .sidebar a:hover:not(.active) {
+    background-color: #A260B3;
+    color: rgb(255, 255, 255);
+  }
+
+  /*-------------------------------------*/
+
+  /*  Conteudo do site (Inicio) */
+
+
+
+
+
+
+  /*#A260B3*/

@@ -37,7 +37,7 @@ if (isset($_SESSION["id"])) {
 
   <?php
   require_once "Conexão/Conexao.php";
-  include "Components/main.php";
+  include "Components/Main.php";
 
   if (isset($_GET['page'])) {
 
@@ -72,5 +72,6 @@ if (isset($_SESSION["id"])) {
   ?>
 
 </body>
+
 
 </html>

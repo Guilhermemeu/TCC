@@ -1,0 +1,3 @@
+        <div class='FotodivP d-flex justify-content-center align-items-center'>
+            <img class='FotoP' src='FotosDePerfil/<?php echo '$fotop' ?>' alt='Foto de Perfil'>
+        </div>
